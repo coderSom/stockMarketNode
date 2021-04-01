@@ -1,1 +1,35 @@
-<h1>Welcome to the home page</h1>
+<h1>Hurray! Results :</h1>
+</br></br>
+<center>
+<h2>
+    {{variable.companyName}} ({{variable.symbol}})
+</h2>
+</br></br>
+<strong>Primary Exchange : </strong>{{variable.primaryExchange}}
+</br>
+<strong>Latest Price : </strong> ${{variable.latestPrice}}
+</br>
+<strong>Latest Source : </strong>{{variable.latestSource}}
+</br>     
+<strong>Latest Time : </strong>{{variable.latestTime}}
+</br>     
+<strong>Previous Close : </strong>${{variable.previousClose}}
+</br>     
+<strong>Change Percent : </strong>{{variable.changePercent}}%
+</br>     
+<strong>Market Cap : </strong>${{variable.marketCap}}
+</br>     
+<strong>YTD Change : </strong>{{variable.ytdChange}}%
+</br>     
+<strong>week52High : </strong>${{variable.week52High}}
+</br>     
+<strong>week52Low : </strong>${{variable.week52Low}}
+
+
+</center>
+<!--
+{{#each variable}}
+    {{@key}} | {{this}}</br>
+
+{{/each}}
+>
